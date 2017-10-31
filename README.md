@@ -28,7 +28,6 @@ zipline: Quantopian zipline回测框架,因为我每次用pip安装都会失败�
     pip install git+https://github.com/JaysonAlbert/cn_zipline.git
     
 将`cn_zipline/extension.py`拷贝至zipline的数据目录,默认为`~/.zipline`
-如果`zipline`安装失败，请使用`conda install -c Quantopian zipline`,我用`pip`安装每次都会失败。
     
 ## 使用：
 cn_zipline与zipline大同小异，具体使用方法请参考zipline[官方文档](http://zipline.io/)。不同之处在于，`ingest`数据时请使用
