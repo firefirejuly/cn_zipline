@@ -8,6 +8,7 @@
 `zipline`的基本使用方法在http://www.zipline.io/beginner-tutorial.html，对于zipline的深度解析，可以大神rainx写的[文档](https://www.gitbook.com/book/rainx/-zipline/details)，本项目中的大部分依赖项目也都是rainx开发的项目
 
 ## 安装依赖
+
 git: 下载地址 https://git-scm.com/download/win
 
 \
@@ -35,6 +36,9 @@ cn-treasury_curve: 国债收益率曲线 https://github.com/rainx/cn_treasury_cu
     
     
 ## 使用：
+cn_zipline与zipline大同小异，具体使用方法请参考zipline[官方文档](http://zipline.io/)。不同之处在于，`ingest`数据时请使用
+`cn_zipline`命令，管理以及清理`bundls`数据时使用`zipline`。运行策略的形式也不同，为便于调试代码，采用直接运行策略脚本，
+而**不是**通过`zipline run`命令来运行。下面是使用示例：
 
 ingest数据：
 
