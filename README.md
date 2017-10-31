@@ -1,4 +1,6 @@
 # cn_zipline
+[![Build Status](https://travis-ci.org/JaysonAlbert/cn_zipline.svg?branch=master)](https://travis-ci.org/JaysonAlbert/cn_zipline)
+
 基于tdx的zipline bundle.
 
 [zipline](http://zipline.io/)是美国[Quantopian](https://quantopian.com/) 公司开源的量化交易回测引擎，它使用`Python`语言开发，
