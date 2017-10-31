@@ -8,16 +8,9 @@
 `zipline`的基本使用方法在http://www.zipline.io/beginner-tutorial.html， 对于zipline的深度解析，可以看大神[rainx](https://github.com/rainx)写的[文档](https://www.gitbook.com/book/rainx/-zipline/details)，本项目中的大部分依赖项目也都是rainx开发的项目
 
 ## 安装依赖
-python:2.7: **目前代码只在`python2.7`上测试过**
-
-\
 git: 下载地址 https://git-scm.com/download/win
 
 \
-pytdx: tdx数据源 https://rainx.gitbooks.io/pytdx/content
-
-    pip install pytdx
-
 pdx: 获取历史k线数据 https://github.com/JaysonAlbert/tdx.git
 
     pip install git+https://github.com/JaysonAlbert/tdx.git
@@ -26,17 +19,17 @@ cn_stock_holidays: 沪深300日历 https://github.com/rainx/cn_stock_holidays
       
     pip install git+https://github.com/rainx/cn_stock_holidays.git
     
-cn-treasury_curve: 国债收益率曲线 https://github.com/rainx/cn_treasury_curve
+zipline: Quantopian zipline回测框架,因为我每次用pip安装都会失败，所以用conda安装
 
-    pip install cn-treasury_curve
+    conda install -c Quantopian zipline
 `
 ## 安装：
 
-    pip install git+https://github.com/JaysonAlbert/tdx.git
+    pip install git+https://github.com/JaysonAlbert/cn_zipline.git
     
 将`cn_zipline/extension.py`拷贝至zipline的数据目录,默认为`~/.zipline`
-    
-    
+如果`zipline`安装失败，请使用`conda install -c Quantopian zipline`,我用`pip`安装每次都会失败。
+    
 ## 使用：
 cn_zipline与zipline大同小异，具体使用方法请参考zipline[官方文档](http://zipline.io/)。不同之处在于，`ingest`数据时请使用
 `cn_zipline`命令，管理以及清理`bundls`数据时使用`zipline`。运行策略的形式也不同，为便于调试代码，采用直接运行策略脚本，
