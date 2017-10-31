@@ -2,7 +2,10 @@
 基于tdx的zipline bundle.
 
 ## 安装依赖
-pytdx: tdx数据源 https://github.com/rainx/pytdx
+git: 下载地址 https://git-scm.com/download/win
+
+\
+pytdx: tdx数据源 https://rainx.gitbooks.io/pytdx/content
 
     pip install pytdx
 
