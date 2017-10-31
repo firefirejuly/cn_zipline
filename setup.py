@@ -25,6 +25,9 @@ setup(
             'cn_zipline = cn_zipline.__main__:main',
         ],
     },
+
+    # pip install git+https://github.com/rainx/cn_stock_holidays.git
+    # pip install git+https://github.com/JaysonAlbert/tdx.git
     install_requires=[
         'pytdx',
         'cn-treasury_curve',
