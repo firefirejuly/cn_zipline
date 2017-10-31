@@ -106,7 +106,6 @@ def tdx_bundle(environ,
     eg.connect()
 
     symbols = fetch_symbols(eg)
-    symbols = symbols[:10]
     metas = []
 
     def gen_symbols_data(symbol_map, freq='1d'):
