@@ -1,6 +1,12 @@
 # cn_zipline
 基于tdx的zipline bundle.
 
+[zipline](http://zipline.io/)是美国[Quantopian](https://quantopian.com/) 公司开源的量化交易回测引擎，它使用`Python`语言开发，
+部分代码使用`cython`融合了部分c语言代码。`Quantopian` 在它的网站上的回测系统就是基于`zipline`的，
+经过生产环境的长期使用，已经比完善，并且在持续的改进中。
+
+`zipline`的基本使用方法在http://www.zipline.io/beginner-tutorial.html，对于zipline的深度解析，可以大神rainx写的[文档](https://www.gitbook.com/book/rainx/-zipline/details)，本项目中的大部分依赖项目也都是rainx开发的项目
+
 ## 安装依赖
 git: 下载地址 https://git-scm.com/download/win
 
