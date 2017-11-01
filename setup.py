@@ -13,7 +13,7 @@ except (IOError, ImportError):
 
 setup(
     name='cn-zipline',
-    version='0.2',
+    version='0.21',
     description='china zipline bundles',
     long_description=long_description,
     author='Jie Wang',
@@ -27,9 +27,9 @@ setup(
     },
 
     install_requires=[
+        'zipline',
         'pytdx',
         'cn-treasury_curve',
-        'zipline',
         'cn-stock-holidays',
         'tdx-wrapper'
     ]
