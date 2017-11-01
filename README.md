@@ -9,6 +9,10 @@
 
 `zipline`的基本使用方法在http://www.zipline.io/beginner-tutorial.html， 对于zipline的深度解析，可以看大神[rainx](https://github.com/rainx)写的[文档](https://www.gitbook.com/book/rainx/-zipline/details)，本项目中的大部分依赖项目也都是rainx开发的项目
 `
+
+## 数据源：
+`cn_zipline`的历史k线以及除息除权数据来自通达信，数据接口来自项目github 项目tdx https://github.com/JaysonAlbert/tdx 
+
 ## 安装：
 
     pip install cn_zipline
