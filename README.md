@@ -8,26 +8,11 @@
 经过生产环境的长期使用，已经比完善，并且在持续的改进中。
 
 `zipline`的基本使用方法在http://www.zipline.io/beginner-tutorial.html， 对于zipline的深度解析，可以看大神[rainx](https://github.com/rainx)写的[文档](https://www.gitbook.com/book/rainx/-zipline/details)，本项目中的大部分依赖项目也都是rainx开发的项目
-
-## 安装依赖
-git: 下载地址 https://git-scm.com/download/win
-
-\
-pdx: 获取历史k线数据 https://github.com/JaysonAlbert/tdx.git
-
-    pip install git+https://github.com/JaysonAlbert/tdx.git
-      
-cn_stock_holidays: 沪深300日历 https://github.com/rainx/cn_stock_holidays
-      
-    pip install git+https://github.com/rainx/cn_stock_holidays.git
-    
-zipline: Quantopian zipline回测框架,因为我每次用pip安装都会失败，所以用conda安装
-
-    conda install -c Quantopian zipline
 `
 ## 安装：
 
-    pip install git+https://github.com/JaysonAlbert/cn_zipline.git
+    pip install cn_zipline
+**注意**：在`windows`上，如果`zipline`安装失败，先用`conda install -c Quantopian zipline`安装`zipline`,然后再安装`cn_zipline`
     
 将`cn_zipline/extension.py`拷贝至zipline的数据目录,默认为`~/.zipline`
     

@@ -12,8 +12,8 @@ except (IOError, ImportError):
 
 
 setup(
-    name='cn_zipline',
-    version='0.02',
+    name='cn-zipline',
+    version='0.2',
     description='china zipline bundles',
     long_description=long_description,
     author='Jie Wang',
@@ -26,11 +26,11 @@ setup(
         ],
     },
 
-    # pip install git+https://github.com/rainx/cn_stock_holidays.git
-    # pip install git+https://github.com/JaysonAlbert/tdx.git
     install_requires=[
         'pytdx',
         'cn-treasury_curve',
         'zipline',
+        'cn-stock-holidays',
+        'tdx-wrapper'
     ]
 )
