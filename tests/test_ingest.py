@@ -1,4 +1,3 @@
-import pytest
 from tdx.engine import Engine
 from cn_zipline.bundles.tdx_bundle import *
 

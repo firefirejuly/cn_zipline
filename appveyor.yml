@@ -5,8 +5,8 @@ environment:
     - PYTHON: "C:\\Python35"
 
 init:
-- cmd: pip install pytest
+- cmd: pip install nose
 build_script:
 - cmd: pip install .
 test_script:
-- cmd: pytest
+- cmd: nosetests
