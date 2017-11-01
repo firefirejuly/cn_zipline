@@ -27,6 +27,7 @@ setup(
     },
 
     install_requires=[
+        'numpy',
         'zipline',
         'pytdx',
         'cn-treasury_curve',
