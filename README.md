@@ -1,5 +1,14 @@
 # cn_zipline
+
+--------------
+
+
+
+[![PyPI version](https://badge.fury.io/py/cn-zipline.svg)](https://badge.fury.io/py/cn-zipline)
+[![Py version](https://img.shields.io/pypi/pyversions/cn-zipline.svg)](https://pypi.python.org/pypi/cn-zipline)
 [![Build Status](https://travis-ci.org/JaysonAlbert/cn_zipline.svg?branch=master)](https://travis-ci.org/JaysonAlbert/cn_zipline)
+[![Build status](https://ci.appveyor.com/api/projects/status/b0pf9nndpj65x0nj/branch/master?svg=true)](https://ci.appveyor.com/project/JaysonAlbert/cn-zipline/branch/master)
+[![Coverage Status](https://coveralls.io/repos/github/JaysonAlbert/cn_zipline/badge.svg?branch=master)](https://coveralls.io/github/JaysonAlbert/cn_zipline?branch=master)
 
 基于tdx的zipline bundle.
 
