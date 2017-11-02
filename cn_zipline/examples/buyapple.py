@@ -9,6 +9,7 @@ def initialize(context):
 
 def handle_data(context, data):
     order(symbol('000001'), 10)
+    current_dt = data.current_dt
     record(AAPL=data.current(symbol('000001'), 'price'))
 
 
@@ -20,4 +21,4 @@ if __name__ == '__main__':
     start = Date(tz='utc', as_timestamp=True).parser('2017-01-01')
 
     end = Date(tz='utc', as_timestamp=True).parser('2017-10-20')
-    run_algorithm(start, end, initialize, 10e6, handle_data=handle_data, bundle='tdx',trading_calendar=shsz_calendar,output='out.pickle')
+    run_algorithm(start, end, initialize, 10e6, handle_data=handle_data, bundle='tdx',trading_calendar=shsz_calendar,data_frequency="minute", output='out.pickle')

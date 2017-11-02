@@ -102,7 +102,7 @@ def tdx_bundle(environ,
                cache,
                show_progress,
                output_dir):
-    eg = Engine(auto_retry=True, multithread=True, thread_num=8)
+    eg = Engine(auto_retry=True, multithread=True, best_ip=True, thread_num=8)
     eg.connect()
 
     symbols = fetch_symbols(eg)
@@ -123,7 +123,7 @@ def tdx_bundle(environ,
 
     assets = set([int(s) for s in symbol_map])
     daily_bar_writer.write(gen_symbols_data(symbol_map, freq="1d"), assets=assets, show_progress=show_progress)
-    with click.progressbar(gen_symbols_data(symbol_map,freq="1m"),
+    with click.progressbar(gen_symbols_data(symbol_map, freq="1m"),
                            label="Merging minute equity files:",
                            length=len(assets),
                            item_show_func=lambda e: e if e is None else str(e[0]),
